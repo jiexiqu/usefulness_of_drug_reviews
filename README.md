@@ -92,9 +92,10 @@ Approach 2: Using only cleaned text to predict the helpful category. Oversample.
     - highest accuracy was 79% also using RandomForestClassifier
 
 Approach 3: Include all features. Leave categories imbalanced.
-   
-    - highest accuracy was 80%, using 
-    - ![image](image/confusion_matrix.png)
+    
+![image](image/confusion_matrix.png)
+
+    - highest accuracy was 80%, using RandomForestClassifier with default parameters.
 
 
 Sometimes predicting the exact number of helpful counts may not be required. By knowing just the category of the review it belongs to, a business can still evaluate this prediction and help to prioritize the predicted 'helpful' reviews in an appropriate order so that they will not get lost in the long list of reviews and be viewed by customers.  
