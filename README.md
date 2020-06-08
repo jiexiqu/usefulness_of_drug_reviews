@@ -16,7 +16,8 @@ I will be building two models:
 
 ### Data
 
-Data obtained from the UCI Machine Learning Repository (https://archive.ics.uci.edu/ml/datasets/Drug+Review+Dataset+%28Drugs.com%29)
+Data obtained from the UCI Machine Learning Repository (https://archive.ics.uci.edu/ml/datasets/Drug+Review+Dataset+%28Drugs.com%29). A small sample of the data can be found in the 'data' folder of this repo. 
+
 It provides a total of 21,5063 drug reviews, which are separated into train (75%) and test (25%). 
 Train data consits of 16,1297 reviews, while the test data consists of 53,766 reviews. 
 
@@ -83,12 +84,15 @@ Except that the reviews are divided into 3 categories based on their helpful cou
     - very helpful (60 or more helpful counts)
     
 Approach 1: Using only cleaned text to predict the helpful category. Undersample.
+    
     - highest accuracy was 52% using RandomForestClassifier
 
 Approach 2: Using only cleaned text to predict the helpful category. Oversample.
+    
     - highest accuracy was 79% also using RandomForestClassifier
 
 Approach 3: Include all features. Leave categories imbalanced.
+   
     - highest accuracy was 80%, using 
     - ![image](image/confusion_matrix.png)
 
