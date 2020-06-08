@@ -64,7 +64,7 @@ XGBoostRegressor | 28.95
 
 Residual plot using predictions from XGBoostRegressor model
 
-![image](image/residual.png)
+![image](image/residuals.png)
 
 Final model is XGBoostRegressor with parameters:
 - learning_rate=0.3
