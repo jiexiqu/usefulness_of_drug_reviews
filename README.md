@@ -18,8 +18,8 @@ I will be building two models:
 
 Data obtained from the UCI Machine Learning Repository (https://archive.ics.uci.edu/ml/datasets/Drug+Review+Dataset+%28Drugs.com%29). A small sample of the data can be found in the 'data' folder of this repo. 
 
-It provides a total of 21,5063 drug reviews, which are separated into train (75%) and test (25%). 
-Train data consits of 16,1297 reviews, while the test data consists of 53,766 reviews. 
+It provides a total of 215,063 drug reviews, which are separated into train (75%) and test (25%). 
+Train data consists of 161,297 reviews, while the test data consists of 53,766 reviews. 
 
 Other than the actual review, dataset also has information such as the drug name, condition that the drug is for, rating of the review, date of the review, and the useful count of the review. 
 
@@ -52,8 +52,7 @@ For reviews with higher ratings, the helpful count of the review also tends to b
 
 ##### Feature Engineering 
 - review_len = length of initial review
-- count_unique_word = number of unique word after review has been cleaned
-- compund = sentiment score using VADER, using only compound score
+- rating = rating given by the reviewer
 
 ##### Results
 Model | RMSE (on validation set)
@@ -71,9 +70,8 @@ Final model is XGBoostRegressor with parameters:
 - learning_rate=0.3
 - max_depth=7
 - min_child_weight=3
-- subsample=1
 
-RMSE (on test set) = 29.22
+RMSE (on test set) = 29.2
 
 ### Predictive Modeling - Classification
 
